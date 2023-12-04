@@ -12,6 +12,22 @@
     box-sizing: border-box;
 }
 
+h2,
+p {
+    font-family: 'open sans', sans serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 body {
     background-color: #FCF5F5;
 }
@@ -77,7 +93,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .main__hero-background {
@@ -86,19 +102,18 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 30%;
-    /*min-height: 45vh;*/
+    padding-top: 30%; /*gör att tomrummet när bilden skalas ner försvinner. Bild 1000x300*/
 }
 
 .main__form {
     background-color: var(--light-green);
-max-width: 24rem;
-padding: .5rem 1rem;
-border-radius: 10px;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-transform: translateY(-10px);
+    max-width: 24rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateY(-10px);
 
 }
 
@@ -107,7 +122,81 @@ transform: translateY(-10px);
     font-weight: 500;
 }
 
+.main__first-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    justify-content: space-around;
+}
 
+.main__p-flex {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 3rem;
+}
+
+.main__p-flex > p {
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.main__grid-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.main__grid-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+    padding: 2rem;
+}
+
+.main__grid-item-1 {
+background-color: var(--light-green);
+border-radius: 0px 0px 0px 60px;
+}
+
+.main__grid-item-2 {
+color: white;
+}
+
+.main__grid-item-3 {
+    color: white;
+    background-color: var(--dark-blue);
+    border-radius: 0px 50px 0px 0px;
+}
+
+.button__läsmer {
+    border: none;
+    font-size: .9rem;
+    font-family: 'open sans', sans serif;
+    align-self: flex-end;
+    margin-top: 2rem;
+    padding: .2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button__läsmer-dark-blue {
+background-color: var(--dark-blue);
+color: white;
+}
+
+.button__läsmer-light-green {
+background-color: var(--light-green);
+}
+
+.button__läsmer-light-blue {
+background-color: var(--light-blue);
+color: white;
+}
 
 .footer__img-sizing {
     justify-self: center;
@@ -137,12 +226,33 @@ transform: translateY(-10px);
     font-weight: bold;
 }
 
+@media screen and (max-width: 700px) {
+    .main__grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main__grid-item-1 {
+        border-radius: 50px 0px 0px 0px;
+        }
+        .main__grid-item-2 {
+            border-radius: 0px 0px 50px 0px;
+            }
+        .main__grid-item-3 {
+            border-radius: 0px 0px 50px 0px;
+            }
+}
+
 @media screen and (max-width: 485px) {
 
     .header__img-size-postion,
     .footer__img-sizing {
         display: none;
     }
-
+    .main__grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
     
+    .main__grid-item-2 {
+        border-radius: 0px 0px 0px 0px;
+        }
 }
+
