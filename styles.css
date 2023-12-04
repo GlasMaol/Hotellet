@@ -44,7 +44,8 @@ footer {
     max-width: 17rem;
     align-self: flex-end;
     justify-content: center;
-    padding: .5rem;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
 }
 
 .header__nav-item {
@@ -52,8 +53,8 @@ footer {
     font-family: 'open sans', sans serif;
     color: black;
     font-weight: 600;
-padding: .5rem 1rem;
-text-decoration: none;
+    padding: .5rem 1rem;
+    text-decoration: none;
 }
 
 .header__nav-form a:hover {
@@ -71,6 +72,42 @@ text-decoration: none;
     cursor: pointer;
     transform: translateY(55px);
 }
+
+.main__hero-poistions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main__hero-background {
+    display: flex;
+    background-image: url(./pictures/09-day-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30%;
+    /*min-height: 45vh;*/
+}
+
+.main__form {
+    background-color: var(--light-green);
+max-width: 24rem;
+padding: .5rem 1rem;
+border-radius: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+transform: translateY(-10px);
+
+}
+
+.main__form-text-styling {
+    font-family: 'open sans', sans serif;
+    font-weight: 500;
+}
+
+
 
 .footer__img-sizing {
     justify-self: center;
@@ -90,5 +127,22 @@ text-decoration: none;
     font-family: 'open sans', sans serif;
     color: black;
     font-weight: 300;
-list-style: none;
+}
+
+.footer__ul {
+    list-style-type: none;
+}
+
+.footer__h3 {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 485px) {
+
+    .header__img-size-postion,
+    .footer__img-sizing {
+        display: none;
+    }
+
+    
 }

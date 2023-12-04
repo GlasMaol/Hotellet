@@ -12,15 +12,22 @@
     <div class="wrapper">
         <header>
             <nav class="header__nav-form">
-                <a href="#" class="header__nav-item active">Home</a>
-                <a href="#" class="header__nav-item">Bokning</a>
-                <a href="#" class="header__nav-item">Tjänster</a>
+                <a href="index.html" class="header__nav-item active">Home</a>
+                <a href="booking.html" class="header__nav-item">Bokning</a>
+                <a href="services.html" class="header__nav-item">Services</a>
             </nav>
             <img class="header__img-size-postion" src="./pictures/logo-new.svg" alt="company logo">
         </header>
         <main>
-            <section>
-                hero, booking nav
+            <section class="main__hero-positions">
+                <article class="main__hero-background"></article>
+                <form class="main__form" action="booking.html">
+                    <label class="main__form-text-styling" for="from">Från</label>
+                    <input class="main__form-text-styling" type="date" id="from" name="from">
+                    <label class="main__form-text-styling" for="to">Till</label>
+                    <input class="main__form-text-styling" type="date" id="to" name="to">
+                    <input class="main__form-text-styling" type="submit" value="Sök">
+                </form>
             </section>
             <section> grid med 3 nyheter
                 <article>
@@ -39,14 +46,15 @@
                 <article class="footer__article-container">
                     <ul class="footer__ul">
                         <li class="footer__ul-item footer__h3">Bonzai.ai</li>
-                        <li class="footer__ul-item">Hotell Bonzai<li>
+                        <li class="footer__ul-item">Hotell Bonzai
+                        <li>
                         <li class="footer__ul-item">3:e Tallen till Vänster</li>
                         <li class="footer__ul-item">Mitt i Skogen</li>
                     </ul>
                 </article>
                 <img class="footer__img-sizing" src="./pictures/bonz.ai-logo-black-landscape.png" alt="company logo">
                 <article class="footer__article-container">
-                    <ul>
+                    <ul class="footer__ul">
                         <li class="footer__ul-item footer__h3">Kontakt</li>
                         <li class="footer__ul-item">bonzai@mycel.nu</li>
                     </ul>
