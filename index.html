@@ -9,16 +9,14 @@
 </head>
 
 <body>
-    <div>
-        <header> flexbox
-            <img> logo
-            <nav>
-                <ul>
-                    <li>Hem</li>
-                    <li>Bokning</li>
-                    <li>Om Hotellet</li>
-                </ul>
+    <div class="wrapper">
+        <header>
+            <nav class="header__nav-form">
+                <a href="#" class="header__nav-item active">Home</a>
+                <a href="#" class="header__nav-item">Bokning</a>
+                <a href="#" class="header__nav-item">Tjänster</a>
             </nav>
+            <img class="header__img-size-postion" src="./pictures/logo-new.svg" alt="company logo">
         </header>
         <main>
             <section>
@@ -37,7 +35,23 @@
             </section>
         </main>
         <footer>
-
+            <section class="footer__section-container">
+                <article class="footer__article-container">
+                    <ul class="footer__ul">
+                        <li class="footer__ul-item footer__h3">Bonzai.ai</li>
+                        <li class="footer__ul-item">Hotell Bonzai<li>
+                        <li class="footer__ul-item">3:e Tallen till Vänster</li>
+                        <li class="footer__ul-item">Mitt i Skogen</li>
+                    </ul>
+                </article>
+                <img class="footer__img-sizing" src="./pictures/bonz.ai-logo-black-landscape.png" alt="company logo">
+                <article class="footer__article-container">
+                    <ul>
+                        <li class="footer__ul-item footer__h3">Kontakt</li>
+                        <li class="footer__ul-item">bonzai@mycel.nu</li>
+                    </ul>
+                </article>
+            </section>
         </footer>
     </div>
 </body>
