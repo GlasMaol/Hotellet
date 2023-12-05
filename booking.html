@@ -20,18 +20,52 @@
         </header>
         <main>
             <section>
-                hero, booking nav
+                <h2 class="main__h2-booking">Våra Förslag</h2>
             </section>
-            <section> grid med 3 nyheter
-                <article>
-                    Nyhet
+            <section class="main__grid-container">
+                <article class="main__grid-item main__grid-item-1">
+                    <h2>Hus 1</h2>
+                    <img class="main__section-img" src="./pictures/hus-1.jpg">
+                    <p>integer id nibh libero. Donec bibendum nec purus et convallis. Quisque ullamcorper lorem eget
+                        ....</p>
+                    <button class="button__läsmer button__läsmer-dark-blue">Läs Mer</button>
                 </article>
-                <article>
-                    Nyhet
+                <article class="main__grid-item main__grid-item-2">
+                    <h2>Hus 2</h2>
+                    <img class="main__section-img" src="./pictures/hus-2.jpg">
+                    <p>Integer id nibh libero. Donec bibendum nec purus et convallis.
+                        Quisque ullamcorper lorem eget
+                        ....</p>
+                    <button class="button__läsmer button__läsmer-light-green">Läs Mer</button>
                 </article>
-                <article>
-                    Nyhet
+                <article class="main__grid-item main__grid-item-3">
+                    <h2>Rum Superior</h2>
+                    <img class="main__section-img" src="./pictures/rum-superior.jpg">
+                    <p>Integer id nibh libero. Donec bibendum nec purus et convallis. Quisque ullamcorper lorem eget
+                        ....</p>
+                    <button class="button__läsmer button__läsmer-light-blue">Läs Mer</button>
                 </article>
+            </section>
+            <section>
+                <h2>Förfina Resultatet</h2>
+            </section>
+            <section class="">
+                <form class="main__form-booking-container" action="booking.html">
+                    <label class="main__form-text-styling" for="from">Från</label>
+                    <input class="main__form-text-styling main__form-size" type="date" id="from" name="from">
+                    <label class="main__form-text-styling" for="to">Till</label>
+                    <input class="main__form-text-styling main__form-size" type="date" id="to" name="to">
+                    <label class="main__form-text-styling" for="pers">Antal</label>
+                    <input class="main__form-text-styling main__form-size" type="text" id="pers" name="pers">
+                    <label class="main__form-text-styling" for="facilities">Faciliteter</label>
+                    <input class="main__form-text-styling main__form-size" type="text" id="facilities" name="facilities">
+                    <label class="main__form-text-styling" for="pets">Husdjurvänlig</label>
+                    <input class="main__form-text-styling main__form-size" type="text" id="pets" name="pets">
+                    <label class="main__form-text-styling" for="champers">Extra Champagne</label>
+                    <input class="main__form-text-styling main__form-size" type="text" id="champers" name="champers">
+                    <input class="main__form-button-styling" type="submit" value="Sök">
+                </form>
+
             </section>
         </main>
         <footer>
@@ -39,7 +73,8 @@
                 <article class="footer__article-container">
                     <ul class="footer__ul">
                         <li class="footer__ul-item footer__h3">Bonzai.ai</li>
-                        <li class="footer__ul-item">Hotell Bonzai<li>
+                        <li class="footer__ul-item">Hotell Bonzai
+                        <li>
                         <li class="footer__ul-item">3:e Tallen till Vänster</li>
                         <li class="footer__ul-item">Mitt i Skogen</li>
                     </ul>

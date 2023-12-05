@@ -89,20 +89,19 @@ footer {
     transform: translateY(55px);
 }
 
-.main__hero-poistions {
+.main__hero-positions {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 
 .main__hero-background {
-    display: flex;
-    background-image: url(./pictures/09-day-2.jpg);
+    background-image: url("./pictures/09-day-2.jpg");
+    height: 20%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 30%; /*gör att tomrummet när bilden skalas ner försvinner. Bild 1000x300*/
+    padding-top: 30%;
+    /*gör att tomrummet när bilden skalas ner försvinner. Bild 1000x300*/
 }
 
 .main__form {
@@ -112,14 +111,26 @@ footer {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     transform: translateY(-10px);
+    align-self: center;
+}
 
+.main__form-booking-container {
+    background-color: var(--light-blue);
+    max-width: 100%;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
 }
 
 .main__form-text-styling {
     font-family: 'open sans', sans serif;
     font-weight: 500;
+    margin-right: .5rem;
 }
 
 .main__first-section {
@@ -129,15 +140,26 @@ footer {
     justify-content: space-around;
 }
 
-.main__p-flex {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-top: 3rem;
+/*styling förslag-grid bokningssida*/
+.main__section-img {
+    max-width: 80%;
+    align-self: center;
 }
 
-.main__p-flex > p {
+.main__h2-booking {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main__p-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.main__p-flex>p {
     max-width: 400px;
     padding: 1rem;
 }
@@ -159,12 +181,12 @@ margin-top: 3rem;
 }
 
 .main__grid-item-1 {
-background-color: var(--light-green);
-border-radius: 0px 0px 0px 60px;
+    background-color: var(--light-green);
+    border-radius: 0px 0px 0px 60px;
 }
 
 .main__grid-item-2 {
-color: white;
+    color: white;
 }
 
 .main__grid-item-3 {
@@ -185,17 +207,17 @@ color: white;
 }
 
 .button__läsmer-dark-blue {
-background-color: var(--dark-blue);
-color: white;
+    background-color: var(--dark-blue);
+    color: white;
 }
 
 .button__läsmer-light-green {
-background-color: var(--light-green);
+    background-color: var(--light-green);
 }
 
 .button__läsmer-light-blue {
-background-color: var(--light-blue);
-color: white;
+    background-color: var(--light-blue);
+    color: white;
 }
 
 .footer__img-sizing {
@@ -230,15 +252,22 @@ color: white;
     .main__grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .main__grid-item-1 {
         border-radius: 50px 0px 0px 0px;
-        }
-        .main__grid-item-2 {
-            border-radius: 0px 0px 50px 0px;
-            }
-        .main__grid-item-3 {
-            border-radius: 0px 0px 50px 0px;
-            }
+    }
+
+    .main__grid-item-2 {
+        border-radius: 0px 0px 50px 0px;
+    }
+
+    .main__grid-item-3 {
+        border-radius: 0px 0px 50px 0px;
+    }
+
+    .main__form-booking-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 485px) {
@@ -247,12 +276,12 @@ color: white;
     .footer__img-sizing {
         display: none;
     }
+
     .main__grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .main__grid-item-2 {
         border-radius: 0px 0px 0px 0px;
-        }
+    }
 }
-
