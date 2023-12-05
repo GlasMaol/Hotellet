@@ -13,6 +13,7 @@
 }
 
 h2,
+h3,
 p {
     font-family: 'open sans', sans serif;
 }
@@ -21,6 +22,11 @@ h2 {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
 }
 
 p {
@@ -124,6 +130,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 3rem;
+    box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.45),
+0px 10px 10px -10px rgba(0,0,0,0.45);
 }
 
 .main__form-article-container {
@@ -173,7 +181,7 @@ footer {
 
 /*styling förslag-grid bokningssida*/
 .main__section-img {
-    max-width: 80%;
+    max-width: 90%;
     align-self: center;
 }
 
@@ -209,6 +217,8 @@ footer {
     flex-direction: column;
     background-color: var(--light-blue);
     padding: 2rem;
+    box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.45),
+0px 10px 10px -10px rgba(0,0,0,0.45);
 }
 
 .main__grid-item-1 {
@@ -256,12 +266,39 @@ footer {
     flex-direction: row;
    justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
 .main__section-results-card {
-    min-width: 16rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 16rem;
     background-color: #55EABD;
-    margin: .2rem;
+    padding: 1rem;
+    border-radius: 0px 30px 0px 30px;
+    margin-bottom: 3rem;
+    margin: 1rem;
+    box-shadow: 0px -10px 10px -10px rgba(0,0,0,0.45),
+0px 10px 10px -10px rgba(0,0,0,0.45);
+}
+
+.results-card-1 {
+    background-color: var(--light-green);
+}
+.results-card-2 {
+    background-color: var(--light-blue);
+}
+.results-card-3 {
+    background-color: var(--dark-blue);
+}
+.results-card-4 {
+    background-color: var(--light-green);
+}
+.results-card-5 {
+    background-color: var(--light-blue);
+}
+.results-card-6 {
+    background-color: var(--dark-blue);
 }
 
 .footer__img-sizing {
