@@ -96,7 +96,6 @@ footer {
 
 .main__hero-background {
     background-image: url("./pictures/09-day-2.jpg");
-    height: 20%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -119,18 +118,50 @@ footer {
 .main__form-booking-container {
     background-color: var(--light-blue);
     max-width: 100%;
-    margin: 1rem;
+    margin: 0;
     padding: .5rem 1rem;
-    border-radius: 10px;
+    border-radius: 0px 50px 0px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.main__form-article-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+}
+
+.main__form-size {
+    max-width: 200px;
+    margin: .1rem;
+
 }
 
 .main__form-text-styling {
     font-family: 'open sans', sans serif;
     font-weight: 500;
     margin-right: .5rem;
+}
+
+.main__form-button-position {
+    justify-self: center;
+}
+
+.main__form-button-styling {
+    min-width: 14rem;
+    background-color: var(--light-green);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+.main__form-button-styling:hover {
+    box-shadow: 0px 0px 4px 1px white;
 }
 
 .main__first-section {
@@ -220,6 +251,19 @@ footer {
     color: white;
 }
 
+.main__section-results-container {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main__section-results-card {
+    min-width: 16rem;
+    background-color: #55EABD;
+    margin: .2rem;
+}
+
 .footer__img-sizing {
     justify-self: center;
     max-width: 14rem;
@@ -268,6 +312,7 @@ footer {
     .main__form-booking-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media screen and (max-width: 485px) {
@@ -283,5 +328,9 @@ footer {
 
     .main__grid-item-2 {
         border-radius: 0px 0px 0px 0px;
+    }
+
+    .main__form-booking-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
