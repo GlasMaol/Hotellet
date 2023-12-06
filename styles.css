@@ -229,6 +229,10 @@ footer {
     flex-direction: column;
 }
 
+.main__p-services-margin-bottom {
+    margin-bottom: 3rem;
+}
+
 .main__aside-container {
     max-width: 40%;
     min-width: 20rem;
