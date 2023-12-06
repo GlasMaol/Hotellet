@@ -51,6 +51,11 @@ footer {
     max-height: 7rem;
 }
 
+.main__header-position {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
 .wrapper {
     max-width: 1000px;
     background-color: white;
@@ -89,8 +94,7 @@ footer {
     font-weight: 700;
 }
 
-.header__img-size-postion {
-    position: relative;
+.header__img-size-position {
     max-width: 12rem;
     cursor: pointer;
     transform: translateY(55px);
@@ -121,6 +125,7 @@ footer {
     align-items: center;
     transform: translateY(-10px);
     align-self: center;
+    z-index: 1;
 }
 
 .main__form-booking-container {
