@@ -214,10 +214,14 @@ footer {
     justify-content: space-around;
 }
 
-/*styling förslag-grid bokningssida*/
+/*img styling*/
 .main__section-img {
-    max-width: 90%;
+    max-width: 100%;
     align-self: center;
+    margin-bottom: 1rem;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0.45),
+        0px 5px 5px -5px rgba(0, 0, 0, 0.45);
 }
 
 .main__h2-booking {
