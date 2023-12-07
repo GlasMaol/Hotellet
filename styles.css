@@ -51,11 +51,7 @@ footer {
     max-height: 7rem;
 }
 
-.main__header-position {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
+
 .wrapper {
     max-width: 1000px;
     background-color: white;
@@ -63,6 +59,14 @@ footer {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 20px 1px rgb(215, 210, 210);
+}
+
+
+/*header styling och funktioner*/
+.main__header-position {
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .header__nav-form {
@@ -100,6 +104,8 @@ footer {
     transform: translateY(55px);
 }
 
+
+/*hero i main*/
 .main__hero-positions {
     display: flex;
     flex-direction: column;
@@ -110,10 +116,10 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 30%;
-    /*gör att tomrummet när bilden skalas ner försvinner. Bild 1000x300*/
+    padding-top: 30%; /*gör att tomrummet när bilden skalas ner försvinner. Bild 1000x300*/
 }
 
+/*flexbox, mindre form-element i index*/
 .main__form {
     background-color: var(--light-green);
     max-width: 24rem;
@@ -128,6 +134,7 @@ footer {
     z-index: 1;
 }
 
+/*grid-element, form-element i booking.html, borde kunde raltionaliseras bort och gå ihop med .main__form klassen egentligen*/
 .main__form-booking-container {
     background-color: var(--light-blue);
     max-width: 100%;
@@ -141,6 +148,7 @@ footer {
         0px 10px 10px -10px rgba(0, 0, 0, 0.45);
 }
 
+/*form styling*/
 .main__form-article-container {
     display: flex;
     flex-direction: column;
@@ -193,10 +201,12 @@ footer {
     transition: .5s;
 }
 
+/*h2 styling*/
 .main__h2-services-margin-top {
     margin-top: 3rem;
 }
 
+/*container till textelement*/
 .main__p-container {
     display: flex;
     flex-direction: column;
@@ -225,7 +235,6 @@ footer {
 
 .main__p-flex,
 .main__p-card>p {
-    /*max-width: 40%;*/
     padding: 1rem;
 }
 
@@ -238,12 +247,14 @@ footer {
     margin-bottom: 3rem;
 }
 
+/*p-element i index och services*/
 .main__aside-container {
     max-width: 40%;
     min-width: 20rem;
     padding-bottom: 1rem;
 }
 
+/*grid-element*/
 .main__grid-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -307,6 +318,8 @@ footer {
     color: white;
 }
 
+
+/*flexbox, fiktiva sökresultat*/
 .main__section-results-container {
     display: flex;
     flex-direction: row;
@@ -328,6 +341,7 @@ footer {
         0px 10px 10px -10px rgba(0, 0, 0, 0.45);
 }
 
+/*egentligen borde det kanske vara lättare här med nth-child i en riktig sökfunktion*/
 .results-card-1 {
     background-color: var(--light-green);
 }
@@ -352,6 +366,7 @@ footer {
     background-color: var(--dark-blue);
 }
 
+/*flexbox med tre element*/
 .footer__img-sizing {
     justify-self: center;
     max-width: 14rem;
@@ -380,6 +395,10 @@ footer {
     font-weight: bold;
 }
 
+
+
+/*tanken från början är att göra sidan responsiv från början för att minska ner mängen media queries*/
+/*grid-element går ner till två kolumner och ändringar i border-radius*/
 @media screen and (max-width: 700px) {
     .main__grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -402,10 +421,10 @@ footer {
     }
 
 }
-
+/*img i header och footer försvinner, andra element går ner till en kolumn, grid-element border-radius ändringar*/
 @media screen and (max-width: 485px) {
 
-    .header__img-size-postion,
+    .header__img-size-position,
     .footer__img-sizing {
         display: none;
     }
